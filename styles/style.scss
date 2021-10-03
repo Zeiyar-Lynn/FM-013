@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+   --clr-pink: hsl(322, 100%, 66%);
+   --clr-light-pink: hsl(321, 100%, 78%);
+   --clr-light-red: hsl(0, 100%, 63%);
+   --clr-v-dark-cyan: hsl(192, 100%, 9%);
+   --clr-v-pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+   margin: 0;
+}
+
+main {
+   font-family: 'Open Sans', Verdana;
+   color: var(--clr-v-dark-cyan);
+}
+
+img {
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+p {
+   font-size: 13px;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.ctr {
+   width: 79%;
+   max-width: 500px;
+   margin: 0 auto;
+   // outline: 1px solid red;
+}
+
+.btn {
+   margin-top: 3.5rem;
+
+   a{
+      font-size: 12px;
+      font-weight: 600;
+      background-color: var(--clr-pink);
+      color: #fff;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.377);
+      border-radius: 1.7rem;
+      padding: .65rem 2.2rem;
+   }
+
+   a:hover {
+      background-color: var(--clr-light-pink);
+   }
+}
+
+.header {
+   font-family: "Poppins";
+   width: 88%;
+   max-width: 600px;
+   margin-top: 3rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .logo {
+      width: 100px;
+   }
+   a {
+      font-size: 11px;
+      line-height: 1;
+      color: var(--clr-pink);
+      border: 1.5px solid var(--clr-pink);
+      border-radius: 1rem;
+      padding: 5px 18px;
+   }
+
+   a:hover {
+      color: var(--clr-light-pink);
+      border-color: var(--clr-light-pink);
+   }
+}
+
+.sct-1 {
+   text-align: center;
+   margin-top: 6rem;
+
+   h1 {
+      font-size: 1.6rem;
+   }
+
+   p {
+      margin-top: 1.3rem;
+      padding-inline: 3px;
+   }
+
+   #mock-up-img {
+      margin-top: 6rem;
+   }
+}
+
+.sct-2 {
+   text-align: center;
+   line-height: 1;
+   margin-top: 7rem;
+
+   .col-1, .col-2 {
+      width: 100%;
+      max-width: 10rem;
+      margin: 0 auto;
+   }
+
+   .col-2 {
+      margin-top: 5rem;
+   }
+
+   .col-2 h1{
+      font-size: 3.3rem;
+   }
+
+   .sct-2-img {
+      text-align: left;
+      padding-left: 3px;
+   }
+
+   h1 {
+      font-size: 3.7rem;
+      margin-block: .5rem 1.4rem;
+   }
+
+   p {
+      opacity: .5;
+   }
+}
+
+.sct-3, .sct-4, .sct-5 {
+   text-align: center;
+   margin-top: 10rem;
+
+   .col-2 {
+      margin-top: 3.5rem;
+   }
+
+   p {
+      margin-top: 1rem;
+   }
+}
+
+.sct-3, .sct-5 {
+   // background-color: var(--clr-v-pale-blue);
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.sct-6 {
+   min-height: 370px;
+   text-align: center;
+   margin-top: 9rem;
+
+   .btn {
+      margin-top: 2.8rem;
+   }
+}
+
+footer {
+   font-family: 'Open Sans', Verdana;
+   color: #fff;
+   background-color: var(--clr-v-dark-cyan);
+   padding: 3rem 0;
+   position: relative;
+
+   p {
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 1rem 0 1.5rem;
+   }
+   
+   #subscribe {
+      text-align: right;
+
+      input {
+         height: 2.6rem;
+         font-family: 'Open Sans', Verdana;
+         border: none;
+         border-radius: 4px;
+         box-sizing: border-box;
+      }
+
+      input[type="email"] {
+         width: 100%;
+         font-size: 1rem;
+         padding-left: .5rem;
+      }
+
+      input[type='submit'] {
+         width: 10rem;
+         font-size: 14px;
+         font-weight: 600;
+         color: #fff;
+         background-color: var(--clr-pink);
+         margin-top: 1rem;
+      }
+
+      input[type="email"] {
+         outline: none;
+      }
+
+      input[type='submit']:hover {
+         cursor: pointer;
+         background-color: var(--clr-light-pink);
+      }
+   }
+
+   .col-2 {
+      margin-top: 7rem;
+   }
+
+   .logo {
+      width: 190px;
+
+      path {
+         fill: #fff;
+      }
+   }
+
+   .col-2 p {
+      margin-bottom: 2.5rem;
+   }
+
+   address {
+      font-size: 14px;
+      font-style: normal;
+      
+      li {
+         padding-left: 2.5rem;
+         background: url(../images/icon-phone.svg) no-repeat;
+      }
+
+      li:last-child {
+         margin-top: 1rem;
+         background-image: url(../images/icon-email.svg);
+      }
+   }
+
+   #social {
+      margin-top: 2.5rem;
+
+      a {
+         font-size: 2rem;
+         color: #fff;
+      }
+
+      a + a {
+         margin-left: 1rem;
+      }
+
+      a:hover {
+         color: rgb(0, 140, 255);
+      }
+   }
+}
+
+.sct-3, .sct-5 {
+   background-color: var(--clr-v-pale-blue);
+   padding: 3rem 0;
+}
+
+.sct-3::before, .sct-3::after, .sct-5::before, .sct-5::after, footer::before {
+   content: '';
+   height: 90px;
+   width: 100%;
+   position: absolute;
+   top: -90px;
+   left: 0;
+   background-size: 100% 90px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.sct-3::after, .sct-5::after {
+   top: initial;
+   bottom: -90px;
+}
+
+.sct-3::before {
+   background-image: url(../images/bg-section-top-mobile-1.svg);
+}
+
+.sct-3::after {
+   background-image: url(../images/bg-section-bottom-mobile-1.svg);
+}
+
+.sct-5::before {
+   background-image: url(../images/bg-section-top-mobile-2.svg);
+}
+
+.sct-5::after {
+   background-image: url(../images/bg-section-bottom-mobile-2.svg);
+}
+
+footer::before {
+   height: 50px;
+   top: -50px;
+   background-size: 100% 50px;
+   background-image: url(../images/bg-footer-top-mobile.svg);
+}
+
+/* 1000px */
+
+@media (min-width: 500px) {
+   .ctr {
+      max-width:1050px;
+   }
+
+   .btn {
+      a{
+         font-size: 14px;
+         padding: .9rem 4rem;
+      }
+   }
+
+   .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   p {
+      font-size: 1rem;
+   }
+
+   h2 {
+      font-size: 2rem;
+   }
+
+   .header {
+      max-width: 1100px;
+      margin-top: 4rem;
+
+      .logo {
+         width: 150px;
+      }
+      a {
+         font-size: 13px;
+         padding: 6px 25px;
+      }
+   }
+
+   .sct-1 {
+      max-width: 800px;
+      margin-top: 9rem;
+   
+      h1 {
+         font-size: 2.3rem;
+      }
+   
+      p {
+         padding-inline: 19%;
+      }
+
+      #mock-up-img {
+         margin-inline: 2rem;
+      }
+   }
+
+   .sct-2 {
+      max-width: 800px;
+   
+      .col-1, .col-2 {
+         max-width: 18rem;
+         margin: 0;
+      }
+   
+      .col-2 {
+         margin: 0;
+      }
+   
+      .col-2 h1{
+         font-size: 5.5rem;
+      }
+   
+      .col-1 .sct-2-img {
+         padding-left: 1.5rem;
+      }
+   
+      h1 {
+         font-size: 5.8rem;
+      }
+   }
+
+   .sct-3 .ctr, .sct-5 .ctr {
+      flex-direction: row-reverse;
+   }
+
+   .sct-3, .sct-4, .sct-5 {
+      // outline: 2px solid blue;
+      text-align: left;
+      margin-top: 16rem;
+   
+      .col-1 {
+         width: 40%;
+      }
+
+      .col-2 {
+         width: 50%;
+         margin: 0;
+      }
+   
+      p {
+         line-height: 1.5;
+      }
+   }
+
+   .sct-6 {
+      min-height: 250px;
+      margin-top: 12rem;
+   }
+
+   footer {
+      padding: 5rem 0;
+      margin-top: 6rem;
+   
+      .row {
+         flex-direction: row-reverse;
+         align-items: flex-start;
+      }
+
+      .col-1 {
+         width: 45%;
+      }
+
+      .col-2 {
+         width: 30%;
+         margin: 0;
+      }
+
+      h3 {
+         font-size: 1.5rem;
+      }
+
+      p {
+         font-size: 15px;
+      }
+
+      .col-1 p{
+         padding-right: 27%;
+      }
+      
+      #subscribe {
+         text-align: left;
+   
+         input[type="email"] {
+            width: 60%;
+            max-width: 18rem;
+         }
+   
+         input[type='submit'] {
+            width: 30%;
+            margin: 0 0 0 1rem;
+         }
+      }
+   
+      .logo {
+         width: 200px;
+      }
+   }
+
+   .sct-3::before, .sct-3::after, .sct-5::before, .sct-5::after, footer::before {
+      height: 110px;
+      top: -110px;
+      background-size: 100% 110px;
+   }
+
+   .sct-3::after, .sct-5::after {
+      top: initial;
+      bottom: -110px;
+   }
+
+   .sct-3::before {
+      background-image: url(../images/bg-section-top-desktop-1.svg);
+   }
+
+   .sct-3::after {
+      background-image: url(../images/bg-section-bottom-desktop-1.svg);
+   }
+
+   .sct-5::before {
+      background-image: url(../images/bg-section-top-desktop-2.svg);
+   }
+
+   .sct-5::after {
+      background-image: url(../images/bg-section-bottom-desktop-2.svg);
+   }
+
+   footer::before {
+      background-image: url(../images/bg-footer-top-desktop.svg);
+   }
+}
+
