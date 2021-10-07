@@ -7,7 +7,10 @@
    --clr-light-red: hsl(0, 100%, 63%);
    --clr-v-dark-cyan: hsl(192, 100%, 9%);
    --clr-v-pale-blue: hsl(207, 100%, 98%);
+   --clr-temp: red;
 }
+
+$temp: red;
 
 * {
    margin: 0;
@@ -211,6 +214,10 @@ footer {
          outline: none;
       }
 
+      input[type="email"]:invalid {
+         color: #ff0000;
+      }
+
       input[type='submit']:hover {
          cursor: pointer;
          background-color: var(--clr-light-pink);
@@ -269,6 +276,7 @@ footer {
 .sct-3, .sct-5 {
    background-color: var(--clr-v-pale-blue);
    padding: 3rem 0;
+   position: relative;
 }
 
 .sct-3::before, .sct-3::after, .sct-5::before, .sct-5::after, footer::before {
@@ -502,4 +510,3 @@ footer::before {
       background-image: url(../images/bg-footer-top-desktop.svg);
    }
 }
-

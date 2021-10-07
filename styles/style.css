@@ -6,6 +6,7 @@
   --clr-light-red: hsl(0, 100%, 63%);
   --clr-v-dark-cyan: hsl(192, 100%, 9%);
   --clr-v-pale-blue: hsl(207, 100%, 98%);
+  --clr-temp: red;
 }
 
 * {
@@ -219,6 +220,10 @@ footer #subscribe input[type="email"] {
   outline: none;
 }
 
+footer #subscribe input[type="email"]:invalid {
+  color: #ff0000;
+}
+
 footer #subscribe input[type='submit']:hover {
   cursor: pointer;
   background-color: var(--clr-light-pink);
@@ -275,6 +280,7 @@ footer #social a:hover {
 .sct-3, .sct-5 {
   background-color: var(--clr-v-pale-blue);
   padding: 3rem 0;
+  position: relative;
 }
 
 .sct-3::before, .sct-3::after, .sct-5::before, .sct-5::after, footer::before {
